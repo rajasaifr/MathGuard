@@ -10,27 +10,6 @@ MathGuard explores whether feedback from a small mathematical claim checker can 
 
 Generation uses `do_sample=False`, with up to 110 new tokens for the main model and 80 for the specialist. The label parser takes the first whole-word `VALID` or `INVALID`, case-insensitively; absent labels become `UNKNOWN`. This is model-assisted checking, not a symbolic correctness guarantee. SymPy was included in the original installation command but is not used as a verifier.
 
-## Repository layout
-
-```text
-mathguard/                    # logical repository name; current local folder is mathRepair
-??? notebooks/
-?   ??? mathguard.ipynb
-??? data/
-?   ??? train.json
-?   ??? test.json
-?   ??? hard_test.json
-??? results/
-?   ??? baseline.csv
-?   ??? slm_results.csv
-?   ??? combined_results.csv
-?   ??? hard_baseline.csv
-?   ??? hard_slm.csv
-?   ??? hard_combined.csv
-??? README.md
-??? requirements.txt
-??? .gitignore
-```
 
 The local workspace also retains ignored `local_archive/` (original notebook, datasets, CSVs, and SHA-256 manifest) and `math_slm_lora/` (the existing adapter and tokenizer). These are not intended for GitHub. The workspace directory was kept in place to preserve its existing Git repository.
 

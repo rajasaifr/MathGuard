@@ -1,0 +1,208 @@
+problem,label,reason,type,prediction,raw_response,correct
+"For x=32, |x|^2 = 32",INVALID,Squaring absolute value gives x squared.,5,INVALID,"Answer: INVALID
+
+Explanation: For x = 32, |x| is the absolute value of x, which is 32. Then |x|² = (32)² = 1024. The claim says |x|² = 32, but 1024 ≠ 32. Therefore, the claim is INVALID.",True
+sqrt((31)^2) = 31,VALID,The principal square root equals the absolute value.,0,VALID,"Answer: VALID
+
+Explanation: The square root of a number squared returns the absolute value of that number. So, √(31²) = |31| = 31. Since 31 is positive, the absolute value is 31. Therefore, the claim is correct.",True
+The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.,INVALID,A zero derivative does not guarantee an extremum.,2,INVALID,"Answer: INVALID
+
+Explanation: While it is true that f'(x) = 3x², so f'(0) = 0, this alone does not imply that f(x) = x³ has a local minimum at x = 0. The derivative being zero at a point indicates a critical point, but not necessarily a local minimum. For f(x) = x³, the function changes from negative to positive as x passes through 0, meaning it has an inflection point at x = 0, not a local minimum",True
+"For x=31, |x|^2 = 31",INVALID,Squaring absolute value gives x squared.,5,INVALID,"Answer: INVALID
+
+Explanation: The claim states that for x = 31, |x|² = 31.
+
+First, |x| when x = 31 is |31| = 31. Then |x|² = (31)² = 961.
+
+But 961 ≠ 31. Therefore, the claim is incorrect.
+
+Correct value: |31|² = 961, not 31.
+
+So the claim is INVALID.",True
+The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.,INVALID,A zero derivative does not guarantee an extremum.,2,INVALID,"Answer: INVALID
+
+Explanation: While it is true that f'(x) = 3x², so f'(0) = 0, this alone does not imply that f(x) = x³ has a local minimum at x = 0. The derivative being zero at a point indicates a critical point, but not necessarily a local minimum. For f(x) = x³, the function changes from negative to positive as x passes through 0, meaning it has an inflection point at x = 0, not a local minimum",True
+"At x=30, (x^2-900)/(x-30) = x+30",INVALID,Cancellation requires a nonzero denominator.,1,INVALID,"Answer: INVALID
+
+Explanation:  
+At x = 30, the expression (x² - 900)/(x - 30) is undefined because the denominator becomes zero (30 - 30 = 0). Even though algebraically, (x² - 900)/(x - 30) simplifies to x + 30 for x ≠ 30 (since x² - 900 = (x - 30)(x + 30)), the expression is not",True
+"At x=31, (x^2-961)/(x-31) = x+31",INVALID,Cancellation requires a nonzero denominator.,1,INVALID,"Answer: INVALID
+
+Explanation:  
+We are given the claim:  
+At $ x = 31 $, $ \frac{x^2 - 961}{x - 31} = x + 31 $
+
+First, note that at $ x = 31 $, the denominator $ x - 31 = 0 $, so the expression $ \frac{x^2 - 961}{x - 31} $ is **undefined** (division by zero).  
+
+Even though $ x",True
+"From -2x > -62, dividing by -2 gives x > 31.",INVALID,Dividing an inequality by a negative reverses its direction.,4,INVALID,"Answer: INVALID
+
+Explanation: When you divide both sides of an inequality by a negative number, you must reverse the inequality sign. Starting with -2x > -62, dividing both sides by -2 gives x < 31, not x > 31. Therefore, the claim is incorrect.",True
+sqrt((30)^2) = 30,VALID,The principal square root equals the absolute value.,0,VALID,"Answer: VALID
+
+Explanation: The square root of a number squared returns the absolute value of that number. So, √(30²) = |30| = 30. Since 30 is positive, the absolute value is 30. Therefore, the claim is correct.",True
+"From -2x > -60, dividing by -2 gives x > 30.",INVALID,Dividing an inequality by a negative reverses its direction.,4,INVALID,"Answer: INVALID
+
+Explanation: When you divide both sides of an inequality by a negative number, you must reverse the inequality sign. Starting with -2x > -60, dividing both sides by -2 gives x < 30, not x > 30. Therefore, the claim is incorrect.",True
+The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.,VALID,A zero derivative does not guarantee an extremum.,2,VALID,"Answer: VALID
+
+Explanation: The function f(x) = x² has a derivative f'(x) = 2x. At x = 0, f'(0) = 0, which is a necessary condition for a local extremum. To confirm it is a local minimum, we can examine the sign of f'(x) around x = 0: for x < 0, f'(x) < 0, and for x > 0, f'(x) > 0, indicating that the function changes from",True
+"Because (32)^2 > (30)^2, we know 32 > 30.",VALID,Comparing squares does not preserve signed ordering.,3,VALID,"Answer: VALID
+
+Explanation: The claim is valid because squaring a positive number preserves the order of the numbers. Since both 32 and 30 are positive, and (32)^2 = 1024 > 900 = (30)^2, it follows that 32 > 30. The function f(x) = x² is strictly increasing for x > 0, so if a² > b² and both a and b are positive, then a > b. Therefore, the",True
+"For x=31, |x|^2 = 31^2",VALID,Squaring absolute value gives x squared.,5,VALID,"Answer: VALID
+
+Explanation: The absolute value of 31 is |31| = 31. Then |x|² = (|31|)² = 31². Since 31 is already positive, |31| = 31, so |x|² = 31². Therefore, the claim is correct.",True
+The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.,VALID,A zero derivative does not guarantee an extremum.,2,VALID,"Answer: VALID
+
+Explanation: The function f(x) = x² has a derivative f'(x) = 2x. At x = 0, f'(0) = 0, which is a necessary condition for a local extremum. To confirm it is a local minimum, we can examine the sign of f'(x) around x = 0: for x < 0, f'(x) < 0, and for x > 0, f'(x) > 0, indicating that the function changes from",True
+"From 2x > 62, dividing by 2 gives x > 31.",VALID,Dividing an inequality by a negative reverses its direction.,4,VALID,"Answer: VALID
+
+Explanation: Starting with the inequality 2x > 62, dividing both sides by 2 gives x > 31. This is a valid algebraic operation because dividing both sides of an inequality by a positive number (2) preserves the inequality. Therefore, the claim is correct.",True
+The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.,VALID,A zero derivative does not guarantee an extremum.,2,VALID,"Answer: VALID
+
+Explanation: The function f(x) = x² has a derivative f'(x) = 2x. At x = 0, f'(0) = 0, which is a necessary condition for a local extremum. To confirm it is a local minimum, we can examine the sign of f'(x) around x = 0: for x < 0, f'(x) < 0, and for x > 0, f'(x) > 0, indicating that the function changes from",True
+"At x=31, (x^2-900)/(x-30) = x+30",VALID,Cancellation requires a nonzero denominator.,1,INVALID,"Answer: INVALID
+
+Explanation:  
+We are given the claim:  
+At $ x = 31 $, $ \frac{x^2 - 900}{x - 30} = x + 30 $
+
+First, check the left-hand side at $ x = 31 $:
+
+Numerator: $ 31^2 - 900 = 961 - 900 = 61 $  
+Denominator: $ 31 - 30 = 1 $",False
+sqrt((-32)^2) = -32,INVALID,The principal square root equals the absolute value.,0,INVALID,"Answer: INVALID
+
+Explanation: The square root function, by definition, returns the non-negative root. So, √((-32)²) = √(1024) = 32, not -32. While (-32)² = 1024, the square root of a positive number is the principal (non-negative) square root. Therefore, the claim is invalid.",True
+"At x=32, (x^2-1024)/(x-32) = x+32",INVALID,Cancellation requires a nonzero denominator.,1,INVALID,"Answer: INVALID
+
+Explanation:  
+We are given the claim:  
+At $ x = 32 $, $ \frac{x^2 - 1024}{x - 32} = x + 32 $
+
+First, note that at $ x = 32 $, the denominator $ x - 32 = 0 $, so the expression $ \frac{x^2 - 1024}{x - 32} $ is undefined (division by zero). Even though the expression might",True
+sqrt((32)^2) = 32,VALID,The principal square root equals the absolute value.,0,VALID,"Answer: VALID
+
+Explanation: The expression √((32)²) equals the square root of 32 squared. Since the square root of a number squared is the absolute value of that number, we have √(32²) = |32| = 32. Since 32 is positive, the result is 32. Therefore, the claim is correct.",True
+"At x=34, (x^2-1089)/(x-33) = x+33",VALID,Cancellation requires a nonzero denominator.,1,VALID,"Answer: VALID
+
+Explanation:  
+We are given the claim:  
+At $ x = 34 $,  
+$$
+\frac{x^2 - 1089}{x - 33} = x + 33
+$$
+
+First, note that $ x^2 - 1089 $ is a difference of squares:  
+$$
+x^2 - 1089 = x^2 - 33^2 = (x - 33)(x + 33)",True
+The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.,INVALID,A zero derivative does not guarantee an extremum.,2,INVALID,"Answer: INVALID
+
+Explanation: While it is true that f'(x) = 3x², so f'(0) = 0, this alone does not imply that f(x) = x³ has a local minimum at x = 0. The derivative being zero at a point indicates a critical point, but not necessarily a local minimum. For f(x) = x³, the function changes from negative to positive as x passes through 0, meaning it has an inflection point at x = 0, not a local minimum",True
+"Because (34)^2 > (32)^2, we know 34 > 32.",VALID,Comparing squares does not preserve signed ordering.,3,VALID,"Answer: VALID
+
+Explanation: The claim is valid because squaring a positive number preserves the order of the numbers. Since both 34 and 32 are positive, and 34 > 32, then (34)^2 > (32)^2. Therefore, if (34)^2 > (32)^2, it logically follows that 34 > 32. This is true for positive real numbers: if a > b > 0, then a² > b². So the reasoning",True
+"Because (-35)^2 > (33)^2, we know -35 > 33.",INVALID,Comparing squares does not preserve signed ordering.,3,INVALID,"Answer: INVALID
+
+Explanation: The claim is invalid because squaring a number removes the sign, so (-35)^2 = 1225 and (33)^2 = 1089. Since 1225 > 1089, it is true that (-35)^2 > (33)^2. However, this does not imply that -35 > 33. In fact, -35 is less than 33. The square of a negative number is positive and",True
+sqrt((-33)^2) = -33,INVALID,The principal square root equals the absolute value.,0,INVALID,"Answer: INVALID
+
+Explanation: The square root function, by definition, returns the non-negative root of a number. So, √((-33)²) = √(1089) = 33, not -33. While (-33)² = 1089, the square root of a positive number is the principal (non-negative) square root. Therefore, the claim is invalid.",True
+"From 2x > 60, dividing by 2 gives x > 30.",VALID,Dividing an inequality by a negative reverses its direction.,4,VALID,"Answer: VALID
+
+Explanation: Starting with the inequality 2x > 60, dividing both sides by 2 gives x > 30. This is a valid algebraic operation because dividing both sides of an inequality by a positive number (2) preserves the inequality. Therefore, the claim is correct.",True
+"Because (-32)^2 > (30)^2, we know -32 > 30.",INVALID,Comparing squares does not preserve signed ordering.,3,INVALID,"Answer: INVALID
+
+Explanation: The claim is invalid because squaring a number removes the sign, so (-32)^2 = 1024 and (30)^2 = 900. Since 1024 > 900, it is true that (-32)^2 > (30)^2. However, this does not imply that -32 > 30. In fact, -32 is less than 30. The square of a negative number is positive and equal to",True
+"At x=32, (x^2-961)/(x-31) = x+31",VALID,Cancellation requires a nonzero denominator.,1,INVALID,"Answer: INVALID
+
+Explanation:  
+We are given the claim:  
+At $ x = 32 $, $ \frac{x^2 - 961}{x - 31} = x + 31 $
+
+First, check the left-hand side at $ x = 32 $:
+
+Numerator: $ x^2 - 961 = 32^2 - 961 = 1024 - 961 = 63 $  
+Denominator: $ x -",False
+The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.,INVALID,A zero derivative does not guarantee an extremum.,2,INVALID,"Answer: INVALID
+
+Explanation: While it is true that f'(x) = 3x², so f'(0) = 0, this alone does not imply that f(x) = x³ has a local minimum at x = 0. The derivative being zero at a point indicates a critical point, but not necessarily a local minimum. For f(x) = x³, the function changes from negative to positive as x passes through 0, meaning it has an inflection point at x = 0, not a local minimum",True
+"For x=30, |x|^2 = 30^2",VALID,Squaring absolute value gives x squared.,5,VALID,"Answer: VALID
+
+Explanation: The claim states that |x|² = 30² when x = 30. Since x = 30, |x| = 30 (the absolute value of 30 is 30). Then |x|² = 30². Therefore, the claim is correct. The square of the absolute value of x equals the square of x itself when x is positive. So, the claim is valid.",True
+sqrt((-30)^2) = -30,INVALID,The principal square root equals the absolute value.,0,INVALID,"Answer: INVALID
+
+Explanation: The square root function, by definition, returns the non-negative root. So, √((-30)²) = √(900) = 30, not -30. While (-30)² = 900, the square root of a number is the principal (non-negative) square root. Therefore, the claim is invalid.",True
+"From 2x > 66, dividing by 2 gives x > 33.",VALID,Dividing an inequality by a negative reverses its direction.,4,VALID,"Answer: VALID
+
+Explanation: Starting with the inequality 2x > 66, dividing both sides by 2 gives x > 33. This is a valid algebraic operation because dividing both sides of an inequality by a positive number (2) preserves the inequality. Therefore, the claim is correct.",True
+sqrt((-31)^2) = -31,INVALID,The principal square root equals the absolute value.,0,INVALID,"Answer: INVALID
+
+Explanation: The square root function, by definition, returns the non-negative root. So, √((-31)²) = √(961) = 31, not -31. While (-31)² = 961, the square root of a positive number is the principal (non-negative) square root. Therefore, the claim is invalid.",True
+"Because (-34)^2 > (32)^2, we know -34 > 32.",INVALID,Comparing squares does not preserve signed ordering.,3,INVALID,"Answer: INVALID
+
+Explanation: The claim is invalid because squaring a number removes the sign, so (-34)^2 = 1156 and (32)^2 = 1024. Since 1156 > 1024, it is true that (-34)^2 > (32)^2. However, this does not imply that -34 > 32. In fact, -34 is less than 32. The square of a negative number is positive and",True
+"For x=30, |x|^2 = 30",INVALID,Squaring absolute value gives x squared.,5,INVALID,"Answer: INVALID
+
+Explanation: The claim states that |x|² = 30 when x = 30. First, |x| when x = 30 is |30| = 30. Then |x|² = (30)² = 900. Since 900 ≠ 30, the claim is incorrect. Therefore, it is INVALID.",True
+"From -2x > -64, dividing by -2 gives x > 32.",INVALID,Dividing an inequality by a negative reverses its direction.,4,INVALID,"Answer: INVALID
+
+Explanation: When you divide both sides of an inequality by a negative number, you must reverse the inequality sign. Starting with -2x > -64, dividing both sides by -2 gives x < 32, not x > 32. Therefore, the claim is incorrect.",True
+The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.,VALID,A zero derivative does not guarantee an extremum.,2,VALID,"Answer: VALID
+
+Explanation: The function f(x) = x² has a derivative f'(x) = 2x. At x = 0, f'(0) = 0, which is a necessary condition for a local extremum. To confirm it is a local minimum, we can examine the sign of f'(x) around x = 0: for x < 0, f'(x) < 0, and for x > 0, f'(x) > 0, indicating that the function changes from",True
+"Because (-33)^2 > (31)^2, we know -33 > 31.",INVALID,Comparing squares does not preserve signed ordering.,3,INVALID,"Answer: INVALID
+
+Explanation: The claim is invalid because squaring a number removes the sign, so (-33)^2 = 1089 and (31)^2 = 961. Since 1089 > 961, it is true that (-33)^2 > (31)^2. However, this does not imply that -33 > 31. In fact, -33 is less than 31. The square of a negative number is positive and equal to",True
+"From -2x > -66, dividing by -2 gives x > 33.",INVALID,Dividing an inequality by a negative reverses its direction.,4,INVALID,"Answer: INVALID
+
+Explanation: When you divide both sides of an inequality by a negative number, you must reverse the inequality sign. Starting with -2x > -66, dividing both sides by -2 gives x < 33, not x > 33. Therefore, the claim is incorrect.",True
+sqrt((33)^2) = 33,VALID,The principal square root equals the absolute value.,0,VALID,"Answer: VALID
+
+Explanation: The square root of a number squared returns the absolute value of that number. So, √(33²) = |33| = 33. Since 33 is positive, the absolute value is 33. Therefore, the claim is correct.",True
+"At x=33, (x^2-1024)/(x-32) = x+32",VALID,Cancellation requires a nonzero denominator.,1,VALID,"Answer: VALID
+
+Explanation:
+
+We are given the claim:
+
+At x = 33,  
+$$
+\frac{x^2 - 1024}{x - 32} = x + 32
+$$
+
+First, verify the left-hand side at x = 33:
+
+Numerator:  
+$$
+x^2 - 1024 = 33^2 - 1024 = 1089 - 1024 = 65
+$$
+
+Den",True
+"Because (33)^2 > (31)^2, we know 33 > 31.",VALID,Comparing squares does not preserve signed ordering.,3,VALID,"Answer: VALID
+
+Explanation: The claim is valid because squaring a positive number preserves the order of the numbers. Since both 33 and 31 are positive, and 33 > 31, then (33)^2 > (31)^2. Therefore, if (33)^2 > (31)^2, it logically follows that 33 > 31. The relationship between the squares of two positive numbers reflects the original inequality. Hence, the claim is correct.",True
+"For x=32, |x|^2 = 32^2",VALID,Squaring absolute value gives x squared.,5,VALID,"Answer: VALID
+
+Explanation: The claim is valid. For x = 32, |x| is the absolute value of x, which is 32. Then |x|² = (32)² = 1024. Also, 32² = 1024. Therefore, |x|² = 32². The claim is correct.",True
+"At x=33, (x^2-1089)/(x-33) = x+33",INVALID,Cancellation requires a nonzero denominator.,1,INVALID,"Answer: INVALID
+
+Explanation:  
+The claim is that at x = 33, the expression (x² - 1089)/(x - 33) equals x + 33.
+
+First, note that when x = 33, the denominator (x - 33) becomes 0. So the expression (x² - 1089)/(x - 33) is **undefined** at x = 33 because division by zero is not allowed.
+
+Even though x² -",True
+"Because (35)^2 > (33)^2, we know 35 > 33.",VALID,Comparing squares does not preserve signed ordering.,3,VALID,"Answer: VALID
+
+Explanation: The claim is valid because squaring a positive number preserves the order of the numbers. Since both 35 and 33 are positive, and 35 > 33, then (35)^2 > (33)^2. Therefore, if (35)^2 > (33)^2, it logically follows that 35 > 33. This is true for positive integers, as squaring is a strictly increasing function for positive numbers. Hence, the reasoning is correct.",True
+"For x=33, |x|^2 = 33",INVALID,Squaring absolute value gives x squared.,5,INVALID,"Answer: INVALID
+
+Explanation: For x = 33, |x| = 33 (since 33 is positive), so |x|² = 33² = 1089. The claim says |x|² = 33, which is clearly false. Therefore, the claim is INVALID.",True
+"From 2x > 64, dividing by 2 gives x > 32.",VALID,Dividing an inequality by a negative reverses its direction.,4,VALID,"Answer: VALID
+
+Explanation: Starting with the inequality 2x > 64, dividing both sides by 2 gives x > 32. This is a valid algebraic operation because dividing both sides of an inequality by a positive number (2) preserves the inequality. Therefore, the claim is correct.",True
+"For x=33, |x|^2 = 33^2",VALID,Squaring absolute value gives x squared.,5,VALID,"Answer: VALID
+
+Explanation: The absolute value of 33 is |33| = 33. Then |x|² = (|33|)² = 33². Since 33² is equal to 33², the claim is correct. Therefore, the statement is valid.",True

@@ -1,0 +1,25 @@
+problem,label,slm_feedback,slm_prediction,slm_correct
+"If a^2=b^2, then a=b for all real a,b.",INVALID,INVALID. Cancellation requires a denominator not zero.,INVALID,True
+"If a and b are positive and a^2>b^2, then a>b.",VALID,VALID. Comparing squares preserves direction.,VALID,True
+Every continuous function is differentiable.,INVALID,INVALID. A continuous function at a point does not imply differentiation there.,INVALID,True
+Every differentiable function is continuous.,VALID,VALID. Continuity and differentiability are unrelated derivatives.,VALID,True
+A function with f''(x)>0 everywhere must be increasing.,INVALID,VALID. A function with positive second derivative must be increasing.,VALID,False
+A function with f'(x)>0 everywhere on an interval is increasing there.,VALID,VALID. A function with positive derivative must be increasing.,VALID,True
+"If AB=AC for matrices, then B=C.",INVALID,VALID. A congruence relation does not imply uniqueness.,VALID,False
+"If A is invertible and AB=AC, then B=C.",VALID,VALID. Cancellation of squares implies equality of letters.,VALID,True
+"If two events are mutually exclusive, they must be independent.",INVALID,VALID. A mutually exclusive event cannot occur simultaneously.,VALID,False
+Two independent events with positive probabilities cannot be mutually exclusive.,VALID,VALID. Mutual exclusivity requires the occurrence of either both or neither.,VALID,True
+"If a series has terms approaching zero, it converges.",INVALID,VALID. Convergence does not require that terms get arbitrarily close to zero.,VALID,False
+Every absolutely convergent real series converges.,VALID,VALID. A converging sequence does not imply absolute convergence.,VALID,True
+"If det(A)=0, matrix A has an inverse.",INVALID,INVALID. A zero determinant does not require the existence of a inverse.,INVALID,True
+"If det(A)!=0 for a square matrix, A is invertible.",VALID,VALID. Det(aI) = |aI| ≠ 0 implies A is invertible.,VALID,True
+"If a graph is connected, it necessarily has an Eulerian circuit.",INVALID,VALID. A graph having an Eulerian circuit must be connected.,VALID,False
+A connected undirected graph in which every vertex has even degree has an Eulerian circuit.,VALID,VALID. A simple graph with even degree for all vertices contains an odd cycle.,VALID,True
+Every local minimum of a differentiable function has derivative zero.,VALID,VALID. A zero derivative does not imply zero function value.,VALID,True
+"If f'(a)=0, then a must be a local maximum.",INVALID,VALID. A zero derivative does not guarantee a local extremum.,VALID,False
+A correlation of zero always implies independence.,INVALID,"VALID. A correlation does not imply independence, even in trivial cases.",VALID,False
+Independence of two random variables with finite variances implies zero covariance.,VALID,VALID. Two random variables may have zero correlation even if they are not independent.,VALID,True
+Every bounded sequence of real numbers converges.,INVALID,VALID. A bounded sequence has its terms within a finite range.,VALID,False
+Every bounded sequence of real numbers has a convergent subsequence.,VALID,VALID. A bounded sequence always has a limit.,VALID,True
+A shortest path in an unweighted graph can be found using BFS.,VALID,VALID. BFS is a popular but not definitive method for finding shortest paths.,VALID,True
+A shortest path in every weighted graph can be found using ordinary BFS.,INVALID,INVALID. Validity depends on the specific implementation of BFS.,INVALID,True

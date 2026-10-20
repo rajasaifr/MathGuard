@@ -1,0 +1,98 @@
+[
+  {
+    "problem": "If a^2=b^2, then a=b for all real a,b.",
+    "label": "INVALID"
+  },
+  {
+    "problem": "If a and b are positive and a^2>b^2, then a>b.",
+    "label": "VALID"
+  },
+  {
+    "problem": "Every continuous function is differentiable.",
+    "label": "INVALID"
+  },
+  {
+    "problem": "Every differentiable function is continuous.",
+    "label": "VALID"
+  },
+  {
+    "problem": "A function with f''(x)>0 everywhere must be increasing.",
+    "label": "INVALID"
+  },
+  {
+    "problem": "A function with f'(x)>0 everywhere on an interval is increasing there.",
+    "label": "VALID"
+  },
+  {
+    "problem": "If AB=AC for matrices, then B=C.",
+    "label": "INVALID"
+  },
+  {
+    "problem": "If A is invertible and AB=AC, then B=C.",
+    "label": "VALID"
+  },
+  {
+    "problem": "If two events are mutually exclusive, they must be independent.",
+    "label": "INVALID"
+  },
+  {
+    "problem": "Two independent events with positive probabilities cannot be mutually exclusive.",
+    "label": "VALID"
+  },
+  {
+    "problem": "If a series has terms approaching zero, it converges.",
+    "label": "INVALID"
+  },
+  {
+    "problem": "Every absolutely convergent real series converges.",
+    "label": "VALID"
+  },
+  {
+    "problem": "If det(A)=0, matrix A has an inverse.",
+    "label": "INVALID"
+  },
+  {
+    "problem": "If det(A)!=0 for a square matrix, A is invertible.",
+    "label": "VALID"
+  },
+  {
+    "problem": "If a graph is connected, it necessarily has an Eulerian circuit.",
+    "label": "INVALID"
+  },
+  {
+    "problem": "A connected undirected graph in which every vertex has even degree has an Eulerian circuit.",
+    "label": "VALID"
+  },
+  {
+    "problem": "Every local minimum of a differentiable function has derivative zero.",
+    "label": "VALID"
+  },
+  {
+    "problem": "If f'(a)=0, then a must be a local maximum.",
+    "label": "INVALID"
+  },
+  {
+    "problem": "A correlation of zero always implies independence.",
+    "label": "INVALID"
+  },
+  {
+    "problem": "Independence of two random variables with finite variances implies zero covariance.",
+    "label": "VALID"
+  },
+  {
+    "problem": "Every bounded sequence of real numbers converges.",
+    "label": "INVALID"
+  },
+  {
+    "problem": "Every bounded sequence of real numbers has a convergent subsequence.",
+    "label": "VALID"
+  },
+  {
+    "problem": "A shortest path in an unweighted graph can be found using BFS.",
+    "label": "VALID"
+  },
+  {
+    "problem": "A shortest path in every weighted graph can be found using ordinary BFS.",
+    "label": "INVALID"
+  }
+]

@@ -1,0 +1,113 @@
+problem,gold,baseline_correct,slm_correct,combined_correct,final_prediction,final_response
+"If a^2=b^2, then a=b for all real a,b.",INVALID,True,True,True,INVALID,"Answer: INVALID
+
+Explanation: The claim ""If a² = b², then a = b"" is invalid because a² = b² implies that a = b or a = -b. For example, if a = 3 and b = -3, then a² = b² = 9, but a ≠ b. Therefore, the statement is not true for all real numbers a and b. The specialist's comment about ""cancellation requires a denominator not zero"" is irrelevant to this claim and appears to be a misat"
+"If a and b are positive and a^2>b^2, then a>b.",VALID,False,True,True,VALID,"Answer: VALID
+
+Explanation:  
+Given that both a and b are positive, and a² > b², we can take the square root of both sides. Since the square root function is strictly increasing for non-negative numbers, and both a and b are positive, the inequality preserves direction:  
+
+√(a²) > √(b²) ⇒ a > b.  
+
+Thus, the claim is valid under the given conditions. The specialist is correct: comparing squares of positive numbers preserves the inequality direction. The original assessment was incorrect."
+Every continuous function is differentiable.,INVALID,True,True,True,INVALID,"Answer: INVALID
+
+Explanation: The claim ""Every continuous function is differentiable"" is false. A function can be continuous at a point without being differentiable there. The absolute value function, f(x) = |x|, is a standard counterexample: it is continuous everywhere, including at x = 0, but not differentiable at x = 0 because the left-hand derivative (-1) and right-hand derivative (+1) are not equal. Continuity is a weaker condition than differentiability. Therefore, the claim is invalid. The"
+Every differentiable function is continuous.,VALID,True,True,True,VALID,"Answer: VALID
+
+Explanation: The claim ""Every differentiable function is continuous"" is valid. This is a well-established result in real analysis. By definition, a function is differentiable at a point if the limit defining the derivative exists at that point. For this limit to exist, the function must be continuous at that point. In fact, differentiability at a point implies continuity at that point. Therefore, every differentiable function is continuous. The specialist's assertion that ""continuity and differentiability are unrelated derivatives"" is incorrect — they are not"
+A function with f''(x)>0 everywhere must be increasing.,INVALID,True,False,True,INVALID,"Answer: INVALID
+
+Explanation: A function with f''(x) > 0 everywhere is concave up, meaning its first derivative f'(x) is increasing. However, the function itself does not have to be increasing. For example, f(x) = x² has f''(x) = 2 > 0 for all x, but it is decreasing on (-∞, 0) and increasing on (0, ∞). Therefore, the function is not necessarily increasing everywhere. The claim is invalid."
+A function with f'(x)>0 everywhere on an interval is increasing there.,VALID,True,True,True,VALID,"Answer: VALID
+
+Explanation: A function with f'(x) > 0 everywhere on an interval is indeed strictly increasing on that interval. By the Mean Value Theorem, for any two points x₁ < x₂ in the interval, there exists a point c in (x₁, x₂) such that f(x₂) - f(x₁) = f'(c)(x₂ - x₁). Since f'(c) > 0 and x₂ - x₁ > 0, it follows that f(x₂) > f"
+"If AB=AC for matrices, then B=C.",INVALID,True,False,True,INVALID,"Answer: INVALID
+
+Explanation: The claim ""If AB = AC for matrices, then B = C"" is **invalid**. Matrix multiplication is not cancellative in general. Even if AB = AC, we cannot conclude that B = C unless A is invertible. For example, if A is the zero matrix (i.e., A = 0), then AB = AC = 0 for any matrices B and C, regardless of whether B and C are equal. This provides a clear counterexample: let A be a 2×2"
+"If A is invertible and AB=AC, then B=C.",VALID,True,True,True,VALID,"Answer: VALID
+
+Explanation: The claim ""If A is invertible and AB = AC, then B = C"" is valid. Since A is invertible, we can left-multiply both sides of the equation AB = AC by A⁻¹. Using the associative property:
+
+A⁻¹(AB) = A⁻¹(AC)  
+(A⁻¹A)B = (A⁻¹A)C  
+I B = I C  
+B = C
+
+This follows directly from the properties of matrix multiplication and invertibility. The specialist"
+"If two events are mutually exclusive, they must be independent.",INVALID,True,False,True,INVALID,"Answer: INVALID
+
+Explanation: Mutually exclusive events cannot occur at the same time, so P(A ∩ B) = 0. For independence, we require P(A ∩ B) = P(A) × P(B). If P(A) and P(B) are both greater than zero, then P(A) × P(B) > 0, which contradicts the zero intersection. Therefore, mutually exclusive events (with non-zero probabilities) cannot be independent. The only exception would be if one of the probabilities is zero, but even"
+Two independent events with positive probabilities cannot be mutually exclusive.,VALID,True,True,False,INVALID,"Answer: **INVALID**
+
+Explanation: The claim ""Two independent events with positive probabilities cannot be mutually exclusive"" is **invalid**.
+
+Here's why:
+
+- Two events are **mutually exclusive** if they cannot occur simultaneously:  
+  $ P(A \cap B) = 0 $.
+
+- Two events are **independent** if:  
+  $ P(A \cap B) = P(A)P(B) $.
+
+Now, suppose both events have **positive probabilities**: $ P(A) > 0 $ and $ P(B)"
+"If a series has terms approaching zero, it converges.",INVALID,True,False,True,INVALID,"Answer: INVALID
+
+Explanation: The claim ""If a series has terms approaching zero, it converges"" is invalid. While it is true that for a series to converge, its terms must approach zero (this is a necessary condition), the converse is not true — having terms approach zero does not guarantee convergence. The classic counterexample is the harmonic series ∑(1/n), where the terms 1/n → 0 as n → ∞, yet the series diverges. Therefore, the condition of terms approaching zero is not sufficient for convergence"
+Every absolutely convergent real series converges.,VALID,True,True,True,VALID,"Answer: VALID
+
+Explanation: The claim ""Every absolutely convergent real series converges"" is mathematically correct and valid. Absolute convergence implies convergence — this is a fundamental theorem in real analysis. If ∑|aₙ| converges, then ∑aₙ also converges. This follows from the comparison test: since |aₙ| forms a non-negative series that converges, the original series ∑aₙ is bounded and its partial sums are Cauchy, hence convergent. The specialist's comment"
+"If det(A)=0, matrix A has an inverse.",INVALID,True,True,True,INVALID,"INVALID
+
+Explanation: A matrix has an inverse (i.e., is invertible) if and only if its determinant is non-zero. If det(A) = 0, the matrix is singular and does not have an inverse. Therefore, the claim that ""if det(A) = 0, matrix A has an inverse"" is mathematically incorrect. The specialist is correct in identifying the claim as invalid."
+"If det(A)!=0 for a square matrix, A is invertible.",VALID,True,True,False,INVALID,"Answer: INVALID
+
+Explanation: The specialist's statement is incorrect. The claim ""det(aI) = |aI| ≠ 0 implies A is invertible"" is invalid because it misapplies the determinant condition. The matrix aI (a times the identity matrix) has determinant det(aI) = a^n, where n is the size of the matrix. If a ≠ 0, then det(aI) ≠ 0, but this does not imply that *any* matrix A is invertible — it only applies to scalar"
+"If a graph is connected, it necessarily has an Eulerian circuit.",INVALID,True,False,True,INVALID,"Answer: INVALID
+
+Explanation: The claim ""If a graph is connected, it necessarily has an Eulerian circuit"" is invalid. A connected graph does not automatically have an Eulerian circuit. An Eulerian circuit exists only if every vertex has even degree. A connected graph may have vertices of odd degree, in which case it lacks an Eulerian circuit. For example, a path graph with 4 vertices (vertices of degrees 1, 2, 2, 1) is connected but has two vertices of odd degree and thus no Euler"
+A connected undirected graph in which every vertex has even degree has an Eulerian circuit.,VALID,True,True,False,INVALID,"Answer: INVALID
+
+Explanation:  
+The claim that ""a simple graph with even degree for all vertices contains an odd cycle"" is **invalid**.  
+
+Counterexample: Consider a cycle graph with 4 vertices (a square): each vertex has degree 2 (even), and the graph contains only even-length cycles (e.g., a 4-cycle). There is **no odd cycle** in this graph.  
+
+In fact, a graph where every vertex has even degree does **not** necessarily contain an odd cycle. The presence of odd cycles"
+Every local minimum of a differentiable function has derivative zero.,VALID,False,True,True,VALID,"Answer: VALID
+
+Explanation: The claim ""Every local minimum of a differentiable function has derivative zero"" is **valid** — provided we interpret it correctly within the context of differentiability.
+
+If a function is differentiable at a point and has a local minimum there, then by the First Derivative Test (or by the definition of differentiability and local extrema), the derivative at that point must be zero. This is a standard result in calculus: for a differentiable function, any local extremum (minimum or maximum) occurs at a critical"
+"If f'(a)=0, then a must be a local maximum.",INVALID,True,False,True,INVALID,"Answer: INVALID
+
+Explanation: The claim ""If f'(a) = 0, then a must be a local maximum"" is invalid. A derivative of zero at a point indicates a critical point, but it does not guarantee a local maximum. The point could be a local minimum, a saddle point, or an inflection point. For example, in f(x) = x³, f'(0) = 0, but x = 0 is not a local maximum or minimum—it is a point of inflection. Therefore, the"
+A correlation of zero always implies independence.,INVALID,True,False,True,INVALID,"Answer: INVALID
+
+Explanation: The claim ""A correlation of zero always implies independence"" is false. A correlation of zero only indicates the absence of a *linear* relationship between two variables. It does not rule out any nonlinear dependence. For example, if y = x², then the correlation between x and y is zero (since there's no linear relationship), but y is completely determined by x — they are dependent. Therefore, zero correlation does not imply independence. The specialist's statement that ""a correlation does not imply independence, even in trivial"
+Independence of two random variables with finite variances implies zero covariance.,VALID,False,True,True,VALID,"**Answer: VALID**
+
+**Explanation:**  
+The claim is: *""Independence of two random variables with finite variances implies zero covariance.""*  
+
+This is **correct** and **valid**.  
+
+If two random variables $ X $ and $ Y $ are **independent**, and both have finite variances, then their **covariance is zero**.  
+
+Mathematically:  
+$$
+\text{Cov}(X, Y) = \mathbb{E}[XY] - \mathbb{E}[X]\math"
+Every bounded sequence of real numbers converges.,INVALID,True,False,True,INVALID,"Answer: INVALID
+
+Explanation: Being bounded means that all terms of a sequence lie within some finite interval, but it does not imply convergence. A classic counterexample is the sequence $ a_n = (-1)^n $, which is bounded between -1 and 1 but does not converge because it alternates between -1 and 1. Convergence requires the sequence to approach a single limit, which is not guaranteed for bounded sequences. Therefore, the claim is invalid."
+Every bounded sequence of real numbers has a convergent subsequence.,VALID,False,True,True,VALID,"Answer: VALID
+
+Explanation: The claim ""Every bounded sequence of real numbers has a convergent subsequence"" is **valid** when interpreted in the context of the real line **R**.
+
+In **R** (the real numbers), the Bolzano-Weierstrass theorem states that every bounded sequence has a convergent subsequence. This is a fundamental result in real analysis. The key point is that the statement refers to sequences in **R**, not in **R^n** for n > 1. While in higher dimensions (e"
+A shortest path in an unweighted graph can be found using BFS.,VALID,True,True,True,VALID,"Answer: VALID
+
+Explanation: The claim ""A shortest path in an unweighted graph can be found using BFS"" is mathematically correct. In an unweighted graph, where all edges are treated as having equal weight (typically 1), the shortest path between two vertices is defined as the path with the fewest number of edges. BFS, when applied from a source vertex, explores all vertices at distance 1, then distance 2, and so on, ensuring that the first time a vertex is visited, it is via the shortest path"
+A shortest path in every weighted graph can be found using ordinary BFS.,INVALID,True,True,True,INVALID,"Answer: INVALID
+
+Explanation: Ordinary BFS (Breadth-First Search) is designed for unweighted graphs, where each edge is treated as having unit weight. It finds the path with the fewest number of edges, not the one with the minimum total weight. In a weighted graph, edge weights can vary significantly, and the path with the fewest edges may not have the smallest total weight. For example, a path with 2 edges of weight 100 may be longer than a path with 3 edges of weight 1"

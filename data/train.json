@@ -1,0 +1,1442 @@
+[
+  {
+    "problem": "At x=4, (x^2-16)/(x-4) = x+4",
+    "label": "INVALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.",
+    "label": "INVALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "sqrt((-6)^2) = -6",
+    "label": "INVALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.",
+    "label": "INVALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.",
+    "label": "INVALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "From -2x > -40, dividing by -2 gives x > 20.",
+    "label": "INVALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "For x=6, |x|^2 = 6",
+    "label": "INVALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "Because (10)^2 > (8)^2, we know 10 > 8.",
+    "label": "VALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "For x=17, |x|^2 = 17",
+    "label": "INVALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "At x=5, (x^2-16)/(x-4) = x+4",
+    "label": "VALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "Because (7)^2 > (5)^2, we know 7 > 5.",
+    "label": "VALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "From -2x > -36, dividing by -2 gives x > 18.",
+    "label": "INVALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "sqrt((-16)^2) = -16",
+    "label": "INVALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "At x=22, (x^2-441)/(x-21) = x+21",
+    "label": "VALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.",
+    "label": "INVALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "Because (14)^2 > (12)^2, we know 14 > 12.",
+    "label": "VALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "sqrt((-12)^2) = -12",
+    "label": "INVALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "Because (-5)^2 > (3)^2, we know -5 > 3.",
+    "label": "INVALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "From 2x > 34, dividing by 2 gives x > 17.",
+    "label": "VALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "For x=5, |x|^2 = 5^2",
+    "label": "VALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "Because (-21)^2 > (19)^2, we know -21 > 19.",
+    "label": "INVALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "From 2x > 20, dividing by 2 gives x > 10.",
+    "label": "VALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "At x=16, (x^2-225)/(x-15) = x+15",
+    "label": "VALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "Because (5)^2 > (3)^2, we know 5 > 3.",
+    "label": "VALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "Because (-18)^2 > (16)^2, we know -18 > 16.",
+    "label": "INVALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "For x=13, |x|^2 = 13^2",
+    "label": "VALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.",
+    "label": "VALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "For x=16, |x|^2 = 16^2",
+    "label": "VALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "For x=3, |x|^2 = 3^2",
+    "label": "VALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.",
+    "label": "INVALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "From 2x > 6, dividing by 2 gives x > 3.",
+    "label": "VALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "At x=12, (x^2-144)/(x-12) = x+12",
+    "label": "INVALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "At x=18, (x^2-324)/(x-18) = x+18",
+    "label": "INVALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "For x=18, |x|^2 = 18",
+    "label": "INVALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "sqrt((8)^2) = 8",
+    "label": "VALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "For x=21, |x|^2 = 21",
+    "label": "INVALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.",
+    "label": "VALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "sqrt((-15)^2) = -15",
+    "label": "INVALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "For x=2, |x|^2 = 2",
+    "label": "INVALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.",
+    "label": "INVALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "Because (13)^2 > (11)^2, we know 13 > 11.",
+    "label": "VALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "sqrt((7)^2) = 7",
+    "label": "VALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "For x=11, |x|^2 = 11^2",
+    "label": "VALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "sqrt((17)^2) = 17",
+    "label": "VALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "At x=4, (x^2-9)/(x-3) = x+3",
+    "label": "VALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "For x=9, |x|^2 = 9^2",
+    "label": "VALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.",
+    "label": "INVALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.",
+    "label": "INVALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "sqrt((4)^2) = 4",
+    "label": "VALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "From 2x > 26, dividing by 2 gives x > 13.",
+    "label": "VALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "Because (4)^2 > (2)^2, we know 4 > 2.",
+    "label": "VALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "At x=9, (x^2-64)/(x-8) = x+8",
+    "label": "VALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "sqrt((-4)^2) = -4",
+    "label": "INVALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "Because (-9)^2 > (7)^2, we know -9 > 7.",
+    "label": "INVALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "At x=13, (x^2-144)/(x-12) = x+12",
+    "label": "VALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "sqrt((-3)^2) = -3",
+    "label": "INVALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "sqrt((-9)^2) = -9",
+    "label": "INVALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "At x=19, (x^2-324)/(x-18) = x+18",
+    "label": "VALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "Because (-4)^2 > (2)^2, we know -4 > 2.",
+    "label": "INVALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "Because (-22)^2 > (20)^2, we know -22 > 20.",
+    "label": "INVALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "Because (17)^2 > (15)^2, we know 17 > 15.",
+    "label": "VALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "From 2x > 36, dividing by 2 gives x > 18.",
+    "label": "VALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.",
+    "label": "INVALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "For x=3, |x|^2 = 3",
+    "label": "INVALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "sqrt((3)^2) = 3",
+    "label": "VALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "Because (20)^2 > (18)^2, we know 20 > 18.",
+    "label": "VALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "For x=14, |x|^2 = 14",
+    "label": "INVALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.",
+    "label": "INVALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.",
+    "label": "VALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "Because (18)^2 > (16)^2, we know 18 > 16.",
+    "label": "VALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "Because (-16)^2 > (14)^2, we know -16 > 14.",
+    "label": "INVALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "At x=5, (x^2-25)/(x-5) = x+5",
+    "label": "INVALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.",
+    "label": "VALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "From -2x > -8, dividing by -2 gives x > 4.",
+    "label": "INVALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "At x=20, (x^2-400)/(x-20) = x+20",
+    "label": "INVALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "sqrt((21)^2) = 21",
+    "label": "VALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "sqrt((-8)^2) = -8",
+    "label": "INVALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "At x=21, (x^2-441)/(x-21) = x+21",
+    "label": "INVALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "For x=15, |x|^2 = 15^2",
+    "label": "VALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "At x=15, (x^2-196)/(x-14) = x+14",
+    "label": "VALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "sqrt((-18)^2) = -18",
+    "label": "INVALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "sqrt((2)^2) = 2",
+    "label": "VALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "For x=9, |x|^2 = 9",
+    "label": "INVALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "For x=2, |x|^2 = 2^2",
+    "label": "VALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "From 2x > 40, dividing by 2 gives x > 20.",
+    "label": "VALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "sqrt((-20)^2) = -20",
+    "label": "INVALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "From -2x > -4, dividing by -2 gives x > 2.",
+    "label": "INVALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "From -2x > -30, dividing by -2 gives x > 15.",
+    "label": "INVALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.",
+    "label": "VALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "sqrt((19)^2) = 19",
+    "label": "VALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "For x=7, |x|^2 = 7^2",
+    "label": "VALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "Because (-23)^2 > (21)^2, we know -23 > 21.",
+    "label": "INVALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.",
+    "label": "INVALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "From -2x > -18, dividing by -2 gives x > 9.",
+    "label": "INVALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.",
+    "label": "VALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "For x=4, |x|^2 = 4^2",
+    "label": "VALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "For x=19, |x|^2 = 19",
+    "label": "INVALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "sqrt((18)^2) = 18",
+    "label": "VALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "Because (11)^2 > (9)^2, we know 11 > 9.",
+    "label": "VALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "For x=8, |x|^2 = 8^2",
+    "label": "VALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.",
+    "label": "VALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "At x=7, (x^2-36)/(x-6) = x+6",
+    "label": "VALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "For x=16, |x|^2 = 16",
+    "label": "INVALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "From 2x > 18, dividing by 2 gives x > 9.",
+    "label": "VALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "At x=21, (x^2-400)/(x-20) = x+20",
+    "label": "VALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "Because (6)^2 > (4)^2, we know 6 > 4.",
+    "label": "VALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "From -2x > -42, dividing by -2 gives x > 21.",
+    "label": "INVALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "Because (-10)^2 > (8)^2, we know -10 > 8.",
+    "label": "INVALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "From -2x > -10, dividing by -2 gives x > 5.",
+    "label": "INVALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "Because (-20)^2 > (18)^2, we know -20 > 18.",
+    "label": "INVALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "sqrt((-11)^2) = -11",
+    "label": "INVALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "Because (16)^2 > (14)^2, we know 16 > 14.",
+    "label": "VALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.",
+    "label": "VALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "For x=10, |x|^2 = 10^2",
+    "label": "VALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "From -2x > -24, dividing by -2 gives x > 12.",
+    "label": "INVALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "From -2x > -14, dividing by -2 gives x > 7.",
+    "label": "INVALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "Because (8)^2 > (6)^2, we know 8 > 6.",
+    "label": "VALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "At x=14, (x^2-196)/(x-14) = x+14",
+    "label": "INVALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "From 2x > 16, dividing by 2 gives x > 8.",
+    "label": "VALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "For x=21, |x|^2 = 21^2",
+    "label": "VALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "At x=6, (x^2-25)/(x-5) = x+5",
+    "label": "VALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "At x=7, (x^2-49)/(x-7) = x+7",
+    "label": "INVALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "Because (-6)^2 > (4)^2, we know -6 > 4.",
+    "label": "INVALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "For x=5, |x|^2 = 5",
+    "label": "INVALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "Because (-11)^2 > (9)^2, we know -11 > 9.",
+    "label": "INVALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "From 2x > 12, dividing by 2 gives x > 6.",
+    "label": "VALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.",
+    "label": "INVALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "Because (9)^2 > (7)^2, we know 9 > 7.",
+    "label": "VALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "At x=13, (x^2-169)/(x-13) = x+13",
+    "label": "INVALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "For x=18, |x|^2 = 18^2",
+    "label": "VALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "From 2x > 30, dividing by 2 gives x > 15.",
+    "label": "VALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "sqrt((20)^2) = 20",
+    "label": "VALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "From 2x > 28, dividing by 2 gives x > 14.",
+    "label": "VALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.",
+    "label": "INVALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "Because (-7)^2 > (5)^2, we know -7 > 5.",
+    "label": "INVALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "For x=8, |x|^2 = 8",
+    "label": "INVALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "For x=7, |x|^2 = 7",
+    "label": "INVALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "At x=10, (x^2-81)/(x-9) = x+9",
+    "label": "VALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "sqrt((10)^2) = 10",
+    "label": "VALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "Because (22)^2 > (20)^2, we know 22 > 20.",
+    "label": "VALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.",
+    "label": "VALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.",
+    "label": "VALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "For x=13, |x|^2 = 13",
+    "label": "INVALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "From 2x > 14, dividing by 2 gives x > 7.",
+    "label": "VALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "sqrt((9)^2) = 9",
+    "label": "VALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.",
+    "label": "INVALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "For x=6, |x|^2 = 6^2",
+    "label": "VALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "Because (15)^2 > (13)^2, we know 15 > 13.",
+    "label": "VALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "At x=16, (x^2-256)/(x-16) = x+16",
+    "label": "INVALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "From 2x > 8, dividing by 2 gives x > 4.",
+    "label": "VALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.",
+    "label": "VALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "From -2x > -20, dividing by -2 gives x > 10.",
+    "label": "INVALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "For x=19, |x|^2 = 19^2",
+    "label": "VALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "Because (12)^2 > (10)^2, we know 12 > 10.",
+    "label": "VALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "At x=3, (x^2-9)/(x-3) = x+3",
+    "label": "INVALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "sqrt((11)^2) = 11",
+    "label": "VALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "At x=17, (x^2-256)/(x-16) = x+16",
+    "label": "VALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "At x=8, (x^2-64)/(x-8) = x+8",
+    "label": "INVALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.",
+    "label": "VALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.",
+    "label": "VALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "At x=2, (x^2-4)/(x-2) = x+2",
+    "label": "INVALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.",
+    "label": "INVALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.",
+    "label": "VALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "From 2x > 42, dividing by 2 gives x > 21.",
+    "label": "VALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "From -2x > -34, dividing by -2 gives x > 17.",
+    "label": "INVALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "sqrt((-14)^2) = -14",
+    "label": "INVALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "For x=11, |x|^2 = 11",
+    "label": "INVALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "From 2x > 24, dividing by 2 gives x > 12.",
+    "label": "VALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "At x=20, (x^2-361)/(x-19) = x+19",
+    "label": "VALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "At x=12, (x^2-121)/(x-11) = x+11",
+    "label": "VALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "From -2x > -12, dividing by -2 gives x > 6.",
+    "label": "INVALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "From -2x > -28, dividing by -2 gives x > 14.",
+    "label": "INVALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "sqrt((-10)^2) = -10",
+    "label": "INVALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "At x=6, (x^2-36)/(x-6) = x+6",
+    "label": "INVALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "Because (-17)^2 > (15)^2, we know -17 > 15.",
+    "label": "INVALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.",
+    "label": "VALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "Because (23)^2 > (21)^2, we know 23 > 21.",
+    "label": "VALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "From 2x > 4, dividing by 2 gives x > 2.",
+    "label": "VALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "At x=19, (x^2-361)/(x-19) = x+19",
+    "label": "INVALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "Because (-14)^2 > (12)^2, we know -14 > 12.",
+    "label": "INVALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "sqrt((12)^2) = 12",
+    "label": "VALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.",
+    "label": "VALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "sqrt((-17)^2) = -17",
+    "label": "INVALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "Because (-12)^2 > (10)^2, we know -12 > 10.",
+    "label": "INVALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.",
+    "label": "INVALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "sqrt((-7)^2) = -7",
+    "label": "INVALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "At x=15, (x^2-225)/(x-15) = x+15",
+    "label": "INVALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "For x=10, |x|^2 = 10",
+    "label": "INVALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.",
+    "label": "VALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.",
+    "label": "INVALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "sqrt((14)^2) = 14",
+    "label": "VALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.",
+    "label": "INVALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "For x=12, |x|^2 = 12",
+    "label": "INVALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "For x=17, |x|^2 = 17^2",
+    "label": "VALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.",
+    "label": "VALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "From -2x > -38, dividing by -2 gives x > 19.",
+    "label": "INVALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "For x=12, |x|^2 = 12^2",
+    "label": "VALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "sqrt((-21)^2) = -21",
+    "label": "INVALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "For x=4, |x|^2 = 4",
+    "label": "INVALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.",
+    "label": "INVALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "For x=14, |x|^2 = 14^2",
+    "label": "VALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "From 2x > 22, dividing by 2 gives x > 11.",
+    "label": "VALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "At x=3, (x^2-4)/(x-2) = x+2",
+    "label": "VALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "From 2x > 38, dividing by 2 gives x > 19.",
+    "label": "VALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "sqrt((-2)^2) = -2",
+    "label": "INVALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "At x=17, (x^2-289)/(x-17) = x+17",
+    "label": "INVALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "Because (19)^2 > (17)^2, we know 19 > 17.",
+    "label": "VALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.",
+    "label": "VALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "At x=11, (x^2-100)/(x-10) = x+10",
+    "label": "VALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.",
+    "label": "INVALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "For x=15, |x|^2 = 15",
+    "label": "INVALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "From -2x > -22, dividing by -2 gives x > 11.",
+    "label": "INVALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "From 2x > 10, dividing by 2 gives x > 5.",
+    "label": "VALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "From -2x > -26, dividing by -2 gives x > 13.",
+    "label": "INVALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "At x=8, (x^2-49)/(x-7) = x+7",
+    "label": "VALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "Because (-15)^2 > (13)^2, we know -15 > 13.",
+    "label": "INVALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "For x=20, |x|^2 = 20",
+    "label": "INVALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "Because (21)^2 > (19)^2, we know 21 > 19.",
+    "label": "VALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "Because (-8)^2 > (6)^2, we know -8 > 6.",
+    "label": "INVALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "At x=11, (x^2-121)/(x-11) = x+11",
+    "label": "INVALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "At x=9, (x^2-81)/(x-9) = x+9",
+    "label": "INVALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "sqrt((-13)^2) = -13",
+    "label": "INVALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "sqrt((-5)^2) = -5",
+    "label": "INVALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "sqrt((6)^2) = 6",
+    "label": "VALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.",
+    "label": "VALID",
+    "reason": "A zero derivative does not guarantee an extremum.",
+    "type": 2
+  },
+  {
+    "problem": "Because (-19)^2 > (17)^2, we know -19 > 17.",
+    "label": "INVALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "sqrt((13)^2) = 13",
+    "label": "VALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "Because (-13)^2 > (11)^2, we know -13 > 11.",
+    "label": "INVALID",
+    "reason": "Comparing squares does not preserve signed ordering.",
+    "type": 3
+  },
+  {
+    "problem": "For x=20, |x|^2 = 20^2",
+    "label": "VALID",
+    "reason": "Squaring absolute value gives x squared.",
+    "type": 5
+  },
+  {
+    "problem": "From -2x > -16, dividing by -2 gives x > 8.",
+    "label": "INVALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "sqrt((15)^2) = 15",
+    "label": "VALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "From 2x > 32, dividing by 2 gives x > 16.",
+    "label": "VALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "sqrt((-19)^2) = -19",
+    "label": "INVALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "At x=10, (x^2-100)/(x-10) = x+10",
+    "label": "INVALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "At x=14, (x^2-169)/(x-13) = x+13",
+    "label": "VALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "At x=18, (x^2-289)/(x-17) = x+17",
+    "label": "VALID",
+    "reason": "Cancellation requires a nonzero denominator.",
+    "type": 1
+  },
+  {
+    "problem": "From -2x > -32, dividing by -2 gives x > 16.",
+    "label": "INVALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  },
+  {
+    "problem": "sqrt((5)^2) = 5",
+    "label": "VALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "sqrt((16)^2) = 16",
+    "label": "VALID",
+    "reason": "The principal square root equals the absolute value.",
+    "type": 0
+  },
+  {
+    "problem": "From -2x > -6, dividing by -2 gives x > 3.",
+    "label": "INVALID",
+    "reason": "Dividing an inequality by a negative reverses its direction.",
+    "type": 4
+  }
+]

@@ -1,0 +1,108 @@
+problem,label,prediction,raw_response,correct
+"If a^2=b^2, then a=b for all real a,b.",INVALID,INVALID,"Answer: INVALID
+
+Explanation: The claim ""If a² = b², then a = b"" is invalid because a² = b² implies that a = b or a = -b. For example, if a = 3 and b = -3, then a² = b² = 9, but a ≠ b. Therefore, the statement is not true for all real numbers a and b.",True
+"If a and b are positive and a^2>b^2, then a>b.",VALID,INVALID,"Answer: INVALID
+
+Explanation: The claim ""If a and b are positive and a² > b², then a > b"" is actually **valid** when a and b are both positive. Here's why:
+
+Since a and b are positive, we can take square roots of both sides of the inequality a² > b² without changing the direction of the inequality. Therefore:
+
+a² > b² ⇒ a > b
+
+This is true because the square root function is strictly increasing for positive numbers. So, if a and b are positive",False
+Every continuous function is differentiable.,INVALID,INVALID,"Answer: INVALID
+
+Explanation: Not every continuous function is differentiable. A classic counterexample is the absolute value function, f(x) = |x|. This function is continuous everywhere, but it is not differentiable at x = 0 because the left-hand and right-hand derivatives do not match (the slope approaches -1 from the left and +1 from the right). Therefore, the claim is incorrect.",True
+Every differentiable function is continuous.,VALID,VALID,"Answer: VALID
+
+Explanation: The claim ""Every differentiable function is continuous"" is valid. By definition, if a function is differentiable at a point, then it must be continuous at that point. Differentiability implies continuity. This is a fundamental result in calculus: a function cannot be differentiable at a point unless it is continuous there. Therefore, every differentiable function is continuous.",True
+A function with f''(x)>0 everywhere must be increasing.,INVALID,INVALID,"Answer: INVALID
+
+Explanation: A function with f''(x) > 0 everywhere is **concave up**, which means its first derivative f'(x) is **increasing**. However, this does not imply that the function itself is increasing. For example, consider f(x) = x². Then f''(x) = 2 > 0 everywhere, so it satisfies the condition, but f(x) is decreasing on (-∞, 0) and increasing on (0, ∞). Thus, the function is",True
+A function with f'(x)>0 everywhere on an interval is increasing there.,VALID,VALID,"Answer: VALID
+
+Explanation: If a function f(x) has f'(x) > 0 everywhere on an interval, then by the definition of the derivative and the Mean Value Theorem, the function is strictly increasing on that interval. A positive derivative means the function is rising at every point, so the function values increase as x increases. Therefore, the claim is correct.",True
+"If AB=AC for matrices, then B=C.",INVALID,INVALID,"Answer: INVALID
+
+Explanation: The claim ""If AB = AC for matrices, then B = C"" is **invalid**. This is because matrix multiplication is not always cancellative. Even if AB = AC, we cannot conclude that B = C unless A is invertible (i.e., has a two-sided inverse). For example, if A is a non-invertible matrix (like a zero matrix or a singular matrix), then AB = AC does not imply B = C. A simple counterexample: let A be a 2×",True
+"If A is invertible and AB=AC, then B=C.",VALID,VALID,"Answer: VALID
+
+Explanation: If A is invertible and AB = AC, then we can multiply both sides of the equation on the left by A⁻¹:
+
+A⁻¹(AB) = A⁻¹(AC)
+
+Using the associative property:
+
+(A⁻¹A)B = (A⁻¹A)C
+
+I = B and I = C, so B = C.
+
+Therefore, the claim is valid. ✅",True
+"If two events are mutually exclusive, they must be independent.",INVALID,INVALID,"Answer: INVALID
+
+Explanation: Mutually exclusive events cannot occur at the same time, meaning the occurrence of one event precludes the occurrence of the other. For independence, the occurrence of one event does not affect the probability of the other. If two events are mutually exclusive (e.g., rolling a die and getting a 1 and a 2), the probability of both occurring simultaneously is zero, which contradicts the definition of independence (where P(A and B) = P(A) × P(B) ≠ 0). Therefore, mutually exclusive",True
+Two independent events with positive probabilities cannot be mutually exclusive.,VALID,VALID,"Answer: VALID
+
+Explanation: The claim is actually **invalid** — so the correct answer is **INVALID**.
+
+Here's why:
+
+Two events are **mutually exclusive** if they cannot occur at the same time (i.e., their intersection is empty: P(A ∩ B) = 0).
+
+Two events are **independent** if the occurrence of one does not affect the probability of the other: P(A ∩ B) = P(A)P(B).
+
+Now, suppose A and B are both independent and have positive probabilities (",True
+"If a series has terms approaching zero, it converges.",INVALID,INVALID,"Answer: INVALID
+
+Explanation: A series having terms that approach zero is a necessary condition for convergence, but not a sufficient one. For example, the harmonic series ∑(1/n) has terms that approach zero, yet the series diverges. Therefore, the claim is incorrect because the condition alone does not guarantee convergence.",True
+Every absolutely convergent real series converges.,VALID,VALID,"Answer: VALID
+
+Explanation: Every absolutely convergent real series converges. This is a well-known result in real analysis. If a series ∑aₙ is absolutely convergent, meaning that the series ∑|aₙ| converges, then the original series ∑aₙ must also converge. This is a consequence of the comparison test or the fact that absolute convergence implies convergence (by the comparison test or by the fact that the absolute convergence controls the behavior of the series). Therefore, the claim is correct.",True
+"If det(A)=0, matrix A has an inverse.",INVALID,INVALID,"INVALID
+
+Explanation: If det(A) = 0, the matrix A is singular and does not have an inverse. A matrix has an inverse if and only if its determinant is non-zero. Therefore, the claim that ""if det(A) = 0, matrix A has an inverse"" is false.",True
+"If det(A)!=0 for a square matrix, A is invertible.",VALID,VALID,"Answer: VALID
+
+Explanation: For a square matrix A, the determinant being non-zero (det(A) ≠ 0) is a well-known and fundamental condition for invertibility. If det(A) ≠ 0, then the matrix A has full rank and its columns are linearly independent, which means it has a unique inverse. Conversely, if det(A) = 0, the matrix is singular and not invertible. Therefore, the claim is correct.",True
+"If a graph is connected, it necessarily has an Eulerian circuit.",INVALID,INVALID,"Answer: INVALID
+
+Explanation: A connected graph does not necessarily have an Eulerian circuit. An Eulerian circuit exists only if every vertex in the graph has even degree. A connected graph may have vertices of odd degree, in which case it does not have an Eulerian circuit. For example, a simple connected graph like a triangle (3 vertices, each of degree 2) has an Eulerian circuit, but a graph like a path with 4 vertices (degrees 1, 2, 2, 1) is connected but has",True
+A connected undirected graph in which every vertex has even degree has an Eulerian circuit.,VALID,VALID,"Answer: VALID
+
+Explanation:  
+A connected undirected graph has an Eulerian circuit (a circuit that traverses every edge exactly once and returns to the starting vertex) if and only if every vertex has even degree. This is a well-known theorem in graph theory. Since the claim states that a connected undirected graph where every vertex has even degree has an Eulerian circuit, and this matches the established criterion, the claim is correct. Therefore, the statement is VALID.",True
+Every local minimum of a differentiable function has derivative zero.,VALID,INVALID,"Answer: INVALID
+
+Explanation: The claim ""Every local minimum of a differentiable function has derivative zero"" is INVALID. While it is true that *if* a differentiable function has a local minimum at a point and the derivative exists there, then the derivative must be zero (by the First Derivative Test), this statement is not universally true in all cases — because it assumes the function is differentiable *and* has a local minimum, which is correct, but the issue arises when the function is not differentiable at the point.
+
+Wait —",False
+"If f'(a)=0, then a must be a local maximum.",INVALID,INVALID,"Answer: INVALID
+
+Explanation: If f'(a) = 0, then a is a critical point, but it does not necessarily mean that a is a local maximum. It could be a local minimum, a saddle point (in multivariable cases), or a point of inflection. For example, consider f(x) = x³; then f'(0) = 0, but x = 0 is neither a local maximum nor a local minimum—it's an inflection point. Therefore, the claim is invalid.",True
+A correlation of zero always implies independence.,INVALID,INVALID,"Answer: INVALID
+
+Explanation: A correlation of zero does not always imply independence. Correlation measures only the linear relationship between two variables. If the relationship between the variables is nonlinear, the correlation can be zero even though the variables are dependent. For example, a perfect quadratic relationship (like y = x²) has a correlation of zero with x, yet y is clearly a function of x. Therefore, zero correlation does not guarantee independence.",True
+Independence of two random variables with finite variances implies zero covariance.,VALID,INVALID,"Answer: INVALID
+
+Explanation: The claim is incorrect. Independence of two random variables does **not** imply zero covariance, but rather, **zero covariance does imply independence** only under certain conditions (e.g., when both variables are jointly normally distributed). However, in general, if two random variables are independent, then their covariance is zero. So actually, independence **does** imply zero covariance.
+
+Wait — this contradicts the original claim. Let's reevaluate.
+
+The claim says: ""Independence of two random variables with finite variances implies zero",False
+Every bounded sequence of real numbers converges.,INVALID,INVALID,"Answer: INVALID
+
+Explanation: A bounded sequence does not necessarily converge. For example, the sequence $ a_n = (-1)^n $ is bounded (it oscillates between -1 and 1), but it does not converge because it alternates between two values and never approaches a single limit. Convergence requires the terms to approach a specific value, which is not guaranteed for bounded sequences. Therefore, the claim is incorrect.",True
+Every bounded sequence of real numbers has a convergent subsequence.,VALID,INVALID,"Answer: INVALID
+
+Explanation: The claim is invalid because it misstates a fundamental result from real analysis. While it is true that every bounded sequence in **R^n** (Euclidean n-space) has a convergent subsequence (by the Bolzano-Weierstrass theorem), the statement as given — ""every bounded sequence of real numbers"" — refers to sequences in **R** (the real line), which is a one-dimensional space.
+
+In **R**, every bounded sequence does indeed have a convergent subsequence — this is actually",False
+A shortest path in an unweighted graph can be found using BFS.,VALID,VALID,"Answer: VALID
+
+Explanation: In an unweighted graph, all edges are considered to have the same cost (typically 1). Breadth-First Search (BFS) explores the graph level by level, starting from the source vertex. Because all edges have equal weight, the first time a vertex is reached during BFS is via the shortest path (in terms of number of edges). Therefore, BFS correctly finds the shortest path in an unweighted graph.",True
+A shortest path in every weighted graph can be found using ordinary BFS.,INVALID,INVALID,"Answer: INVALID
+
+Explanation: Ordinary Breadth-First Search (BFS) is designed for unweighted graphs, where all edges are considered to have equal weight (typically 1). BFS finds the shortest path in terms of the number of edges (i.e., minimum number of hops), not the sum of edge weights.
+
+In a weighted graph, the shortest path is defined as the path with the minimum total weight (sum of edge weights), not the minimum number of edges. To find such paths, algorithms like Dijkstra's or Bellman-F",True

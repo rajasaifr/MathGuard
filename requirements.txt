@@ -1,0 +1,11 @@
+# Constraints recovered from the original notebook; not a frozen environment.
+torch
+transformers>=4.53,<5
+bitsandbytes>=0.46.1
+accelerate
+peft
+trl
+datasets
+pandas
+sympy>=1.12
+jupyterlab

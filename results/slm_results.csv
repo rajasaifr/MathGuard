@@ -1,0 +1,49 @@
+problem,label,reason,type,slm_prediction,slm_feedback,slm_correct
+"For x=32, |x|^2 = 32",INVALID,Squaring absolute value gives x squared.,5,INVALID,INVALID. Squaring absolute value gives x squared.,True
+sqrt((31)^2) = 31,VALID,The principal square root equals the absolute value.,0,VALID,VALID. The principal square root equals the absolute value.,True
+The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.,INVALID,A zero derivative does not guarantee an extremum.,2,INVALID,INVALID. A zero derivative does not guarantee an extremum.,True
+"For x=31, |x|^2 = 31",INVALID,Squaring absolute value gives x squared.,5,INVALID,INVALID. Squaring absolute value gives x squared.,True
+The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.,INVALID,A zero derivative does not guarantee an extremum.,2,INVALID,INVALID. A zero derivative does not guarantee an extremum.,True
+"At x=30, (x^2-900)/(x-30) = x+30",INVALID,Cancellation requires a nonzero denominator.,1,INVALID,INVALID. Cancellation requires a nonzero denominator.,True
+"At x=31, (x^2-961)/(x-31) = x+31",INVALID,Cancellation requires a nonzero denominator.,1,INVALID,INVALID. Cancellation requires a nonzero denominator.,True
+"From -2x > -62, dividing by -2 gives x > 31.",INVALID,Dividing an inequality by a negative reverses its direction.,4,INVALID,INVALID. Dividing an inequality by a negative reverses its direction.,True
+sqrt((30)^2) = 30,VALID,The principal square root equals the absolute value.,0,VALID,VALID. The principal square root equals the absolute value.,True
+"From -2x > -60, dividing by -2 gives x > 30.",INVALID,Dividing an inequality by a negative reverses its direction.,4,INVALID,INVALID. Dividing an inequality by a negative reverses its direction.,True
+The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.,VALID,A zero derivative does not guarantee an extremum.,2,INVALID,INVALID. A zero derivative does not guarantee an extremum.,False
+"Because (32)^2 > (30)^2, we know 32 > 30.",VALID,Comparing squares does not preserve signed ordering.,3,VALID,VALID. Comparing squares does not preserve signed ordering.,True
+"For x=31, |x|^2 = 31^2",VALID,Squaring absolute value gives x squared.,5,VALID,VALID. Squaring absolute value gives x squared.,True
+The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.,VALID,A zero derivative does not guarantee an extremum.,2,INVALID,INVALID. A zero derivative does not guarantee an extremum.,False
+"From 2x > 62, dividing by 2 gives x > 31.",VALID,Dividing an inequality by a negative reverses its direction.,4,VALID,VALID. Dividing an inequality by a negative reverses its direction.,True
+The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.,VALID,A zero derivative does not guarantee an extremum.,2,INVALID,INVALID. A zero derivative does not guarantee an extremum.,False
+"At x=31, (x^2-900)/(x-30) = x+30",VALID,Cancellation requires a nonzero denominator.,1,INVALID,INVALID. Cancellation requires a nonzero denominator.,False
+sqrt((-32)^2) = -32,INVALID,The principal square root equals the absolute value.,0,INVALID,INVALID. The principal square root equals the absolute value.,True
+"At x=32, (x^2-1024)/(x-32) = x+32",INVALID,Cancellation requires a nonzero denominator.,1,INVALID,INVALID. Cancellation requires a nonzero denominator.,True
+sqrt((32)^2) = 32,VALID,The principal square root equals the absolute value.,0,VALID,VALID. The principal square root equals the absolute value.,True
+"At x=34, (x^2-1089)/(x-33) = x+33",VALID,Cancellation requires a nonzero denominator.,1,INVALID,INVALID. Cancellation requires a nonzero denominator.,False
+The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.,INVALID,A zero derivative does not guarantee an extremum.,2,INVALID,INVALID. A zero derivative does not guarantee an extremum.,True
+"Because (34)^2 > (32)^2, we know 34 > 32.",VALID,Comparing squares does not preserve signed ordering.,3,VALID,VALID. Comparing squares does not preserve signed ordering.,True
+"Because (-35)^2 > (33)^2, we know -35 > 33.",INVALID,Comparing squares does not preserve signed ordering.,3,INVALID,INVALID. Comparing squares does not preserve signed ordering.,True
+sqrt((-33)^2) = -33,INVALID,The principal square root equals the absolute value.,0,INVALID,INVALID. The principal square root equals the absolute value.,True
+"From 2x > 60, dividing by 2 gives x > 30.",VALID,Dividing an inequality by a negative reverses its direction.,4,VALID,VALID. Dividing an inequality by a negative reverses its direction.,True
+"Because (-32)^2 > (30)^2, we know -32 > 30.",INVALID,Comparing squares does not preserve signed ordering.,3,INVALID,INVALID. Comparing squares does not preserve signed ordering.,True
+"At x=32, (x^2-961)/(x-31) = x+31",VALID,Cancellation requires a nonzero denominator.,1,INVALID,INVALID. Cancellation requires a nonzero denominator.,False
+The function f(x)=x^3 has a local minimum at x=0 because f'(0)=0.,INVALID,A zero derivative does not guarantee an extremum.,2,INVALID,INVALID. A zero derivative does not guarantee an extremum.,True
+"For x=30, |x|^2 = 30^2",VALID,Squaring absolute value gives x squared.,5,VALID,VALID. Squaring absolute value gives x squared.,True
+sqrt((-30)^2) = -30,INVALID,The principal square root equals the absolute value.,0,INVALID,INVALID. The principal square root equals the absolute value.,True
+"From 2x > 66, dividing by 2 gives x > 33.",VALID,Dividing an inequality by a negative reverses its direction.,4,VALID,VALID. Dividing an inequality by a negative reverses its direction.,True
+sqrt((-31)^2) = -31,INVALID,The principal square root equals the absolute value.,0,INVALID,INVALID. The principal square root equals the absolute value.,True
+"Because (-34)^2 > (32)^2, we know -34 > 32.",INVALID,Comparing squares does not preserve signed ordering.,3,INVALID,INVALID. Comparing squares does not preserve signed ordering.,True
+"For x=30, |x|^2 = 30",INVALID,Squaring absolute value gives x squared.,5,INVALID,INVALID. Squaring absolute value gives x squared.,True
+"From -2x > -64, dividing by -2 gives x > 32.",INVALID,Dividing an inequality by a negative reverses its direction.,4,INVALID,INVALID. Dividing an inequality by a negative reverses its direction.,True
+The function f(x)=x^2 has a local minimum at x=0 because f'(0)=0.,VALID,A zero derivative does not guarantee an extremum.,2,INVALID,INVALID. A zero derivative does not guarantee an extremum.,False
+"Because (-33)^2 > (31)^2, we know -33 > 31.",INVALID,Comparing squares does not preserve signed ordering.,3,INVALID,INVALID. Comparing squares does not preserve signed ordering.,True
+"From -2x > -66, dividing by -2 gives x > 33.",INVALID,Dividing an inequality by a negative reverses its direction.,4,INVALID,INVALID. Dividing an inequality by a negative reverses its direction.,True
+sqrt((33)^2) = 33,VALID,The principal square root equals the absolute value.,0,VALID,VALID. The principal square root equals the absolute value.,True
+"At x=33, (x^2-1024)/(x-32) = x+32",VALID,Cancellation requires a nonzero denominator.,1,INVALID,INVALID. Cancellation requires a nonzero denominator.,False
+"Because (33)^2 > (31)^2, we know 33 > 31.",VALID,Comparing squares does not preserve signed ordering.,3,VALID,VALID. Comparing squares does not preserve signed ordering.,True
+"For x=32, |x|^2 = 32^2",VALID,Squaring absolute value gives x squared.,5,VALID,VALID. Squaring absolute value gives x squared.,True
+"At x=33, (x^2-1089)/(x-33) = x+33",INVALID,Cancellation requires a nonzero denominator.,1,INVALID,INVALID. Cancellation requires a nonzero denominator.,True
+"Because (35)^2 > (33)^2, we know 35 > 33.",VALID,Comparing squares does not preserve signed ordering.,3,VALID,VALID. Comparing squares does not preserve signed ordering.,True
+"For x=33, |x|^2 = 33",INVALID,Squaring absolute value gives x squared.,5,INVALID,INVALID. Squaring absolute value gives x squared.,True
+"From 2x > 64, dividing by 2 gives x > 32.",VALID,Dividing an inequality by a negative reverses its direction.,4,VALID,VALID. Dividing an inequality by a negative reverses its direction.,True
+"For x=33, |x|^2 = 33^2",VALID,Squaring absolute value gives x squared.,5,VALID,VALID. Squaring absolute value gives x squared.,True

@@ -1,87 +1,130 @@
-# MathGuard ? Lightweight Verification of LLM Mathematical Reasoning
+# MathGuard
 
-MathGuard explores whether feedback from a small mathematical claim checker can improve a larger language model's judgments. This repository contains a LoRA fine-tuning and evaluation notebook, synthetic datasets, and preserved experimental CSVs. It evaluates claim validity, rather than formally verifying complete proofs or reasoning traces.
+### Lightweight Verification of LLM Mathematical Reasoning
 
-## Architecture
+MathGuard investigates whether a LoRA-trained small language model can improve a larger language model's mathematical judgments, especially when mathematical assumptions are overlooked.
 
-1. **Baseline:** `Qwen/Qwen3-4B-Instruct-2507` judges a claim and produces a brief explanation. The notebook loads it in 4-bit NF4 with float16 computation; standard evaluation uses double quantization.
-2. **Specialist:** `Qwen/Qwen2.5-0.5B-Instruct`, fine-tuned with LoRA, independently returns a validity label and explanation.
-3. **Combined:** the main model receives the original claim, its baseline response, and specialist feedback. The prompt asks it to verify independently because the specialist may be wrong.
+## 1. Research Motivation and Blind Spot
 
-Generation uses `do_sample=False`, with up to 110 new tokens for the main model and 80 for the specialist. The label parser takes the first whole-word `VALID` or `INVALID`, case-insensitively; absent labels become `UNKNOWN`. This is model-assisted checking, not a symbolic correctness guarantee. SymPy was included in the original installation command but is not used as a verifier.
+My interest in mathematics and research on language-model reliability motivated me to investigate whether LLMs can distinguish valid mathematical conclusions from statements that omit necessary assumptions.
 
+For example, a stationary point does not necessarily indicate a local extremum, and algebraic cancellation is invalid when the denominator is zero.
 
-The local workspace also retains ignored `local_archive/` (original notebook, datasets, CSVs, and SHA-256 manifest) and `math_slm_lora/` (the existing adapter and tokenizer). These are not intended for GitHub. The workspace directory was kept in place to preserve its existing Git repository.
+MathGuard studies assumption-sensitive mathematical claim verification, rather than complete proof verification.
 
-## Datasets
+## 2. Research Questions
 
-The original notebook generates six balanced synthetic claim families: principal square roots, cancellation at a zero denominator, stationary points versus extrema, ordering from squared values, inequality division, and squared absolute values. Training uses integer parameters 2?21; the standard test uses 30?33. Python and Torch seeds are set to 42 in the notebook.
+1. How accurately does Qwen3-4B identify valid and invalid mathematical claims?
+2. Can a LoRA-adapted 0.5B model learn to recognize mathematical reasoning errors?
+3. Does feedback from the smaller model improve the larger model's judgments?
 
-| File | Rows | VALID / INVALID | Distinct claim texts |
-| --- | ---: | ---: | ---: |
-| train.json | 240 | 120 / 120 | 202 |
-| test.json | 48 | 24 / 24 | 42 |
-| hard_test.json | 24 | 12 / 12 | 24 |
+## 3. Architecture
 
-Standard examples contain `problem`, `label`, `reason`, and `type`; hard examples contain `problem` and `label`. The hard set is a manually specified collection covering analysis, linear algebra, probability, sequences/series, and graph theory. It is not an established external benchmark. All JSONs are preserved byte-for-byte.
+- **Main LLM:** `Qwen/Qwen3-4B-Instruct-2507`, loaded using 4-bit NF4 quantization.
+- **Specialist SLM:** `Qwen/Qwen2.5-0.5B-Instruct`, fine-tuned with LoRA.
+- **Combined system:** The main model receives its original answer and feedback from the specialist, then independently revisits its judgment.
 
-**Dataset caveats:** two distinct claim texts occur in both training and the standard test, because the stationary-point template does not use its integer parameter. Both splits also contain repeated texts. Numerical parameter separation therefore does not imply complete text separation. Template explanations are shared across labels and are not always tailored to an individual example. Some hard claims leave domain assumptions implicit (for example, interior points for the derivative-at-a-minimum statement). Labels are preserved, not independently certified.
+The SLM offers advisory feedback, not formal mathematical verification.
 
-## LoRA fine-tuning
+## 4. Dataset
 
-The notebook and saved adapter configuration support the following setup:
+| Dataset | Examples | Description |
+|---|---:|---|
+| Training | 240 | Six families of synthetic mathematical claims |
+| Standard evaluation | 48 | Familiar mathematical structures with different numerical parameters |
+| Hard evaluation | 24 | Different mathematical structures from analysis, algebra, probability, and graph theory |
 
-| Setting | Value |
-| --- | --- |
-| Base specialist | Qwen/Qwen2.5-0.5B-Instruct |
-| Target modules | q_proj, v_proj |
-| Rank / alpha / dropout | 8 / 16 / 0.05 |
-| Bias / task | none / CAUSAL_LM |
+The six synthetic families cover square roots, algebraic cancellation, stationary points, squared inequalities, division of inequalities, and absolute values.
+
+The standard split shares templates and some exact examples with training. The hard test is a small, separately specified set, not an established benchmark.
+
+## 5. LoRA Fine-Tuning
+
+| Parameter | Value |
+|---|---|
+| Base model | Qwen2.5-0.5B-Instruct |
+| Rank / Alpha | 8 / 16 |
+| Dropout | 0.05 |
+| Target modules | `q_proj`, `v_proj` |
 | Epochs | 3 |
-| Per-device batch / gradient accumulation | 2 / 4 |
-| Learning rate | 0.0002 |
-| Maximum sequence length | 256 |
-| Precision / objective | FP16 / completion-only loss |
-| Checkpoint strategy | no intermediate saves; final adapter saved |
+| Learning rate | `2e-4` |
+| Effective batch size | 8 |
+| Max sequence length | 256 |
+| Precision | FP16 |
 
-Training uses TRL's `SFTTrainer` with prompt/completion conversations. The assistant completion contains the dataset label and reason. The original notebook metadata specifies a Colab T4 GPU. No training was executed during repository preparation.
+Training uses supervised fine-tuning with validity labels and explanations.
 
-## Evaluation and recorded results
+## 6. Experimental Results
 
-Accuracy is the fraction of rows whose parsed prediction matches the preserved reference label. The table below is calculated directly from existing CSV correctness columns, not a new inference run. Rows and predictions were checked against their datasets and recorded correctness flags.
+| System | Standard (48) | Hard (24) |
+|---|---:|---:|
+| Qwen3-4B alone | 95.83% | 83.33% |
+| LoRA-trained SLM | 83.33% | 66.67% |
+| **Qwen3-4B + SLM** | **100.00%** | **87.50%** |
 
-| System | Standard test | Hard test |
-| --- | ---: | ---: |
-| Main model baseline | 46/48 (95.83%) | 20/24 (83.33%) |
-| LoRA specialist | 40/48 (83.33%) | 16/24 (66.67%) |
-| Main model + specialist | 48/48 (100.00%) | 21/24 (87.50%) |
+On the standard evaluation, feedback corrected two baseline errors and introduced no regressions.
 
-On the standard set, the combined system corrects two baseline mistakes and regresses on zero cases. On the hard set, it corrects four mistakes and regresses on three cases, for a net gain of one correct answer. The CSVs retain raw responses, predictions, labels, and correctness flags; combined files also retain baseline and specialist correctness.
+On the hard evaluation, feedback corrected four errors but introduced three regressions, producing a net improvement of one correct answer out of 24.
 
-These are small, single recorded evaluations with no confidence intervals or repeated-seed study. There is no measured latency, memory benchmark, comparison to an untrained specialist, or main-model self-revision control. Thus the data do not isolate the effect of LoRA or specialist feedback from the effect of another main-model generation. ?Lightweight? describes the specialist's relative model size and adapter training, not a measured end-to-end efficiency improvement. Hard combined evaluation omits the double-quantization option used in the standard baseline; prompts also differ across phases. No generalization or formal verification claim follows from the perfect standard score.
+These results suggest that specialist feedback can sometimes improve mathematical judgments, but that even correct feedback is not necessarily used correctly by the main model.
 
-## Usage and reproducibility
+## 7. Proposed Path Forward
 
-Create a Python environment and install the project dependencies:
+**Assumption-focused data:** Curate counterfactual mathematical claims that differ by one essential assumption, such as positivity, domain restrictions, or invertibility.
+
+**Specialist adaptation:** Train the SLM to identify the exact invalid inference or missing assumption, rather than predicting only `VALID` or `INVALID`.
+
+**Verification-gated revision:** Introduce symbolic tools where applicable, and accept revised judgments only when supported by a valid mathematical check.
+
+These are proposed improvements, not experimentally demonstrated solutions.
+
+## 8. Repository Structure
+
+```text
+MathGuard/
+├── notebooks/
+│   └── mathguard.ipynb
+├── data/
+│   ├── train.json
+│   ├── test.json
+│   └── hard_test.json
+├── results/
+│   ├── baseline.csv
+│   ├── slm_results.csv
+│   ├── combined_results.csv
+│   ├── hard_baseline.csv
+│   ├── hard_slm.csv
+│   └── hard_combined.csv
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
+## 9. Reproducibility
 
 ```bash
-python -m venv .venv
-# Windows PowerShell: .venv\Scripts\Activate.ps1
-# Linux/macOS: source .venv/bin/activate
-python -m pip install -r requirements.txt
+pip install -r requirements.txt
 jupyter lab notebooks/mathguard.ipynb
 ```
 
-The notebook defaults to `RUN_EXPERIMENTS = False`: running all cells only reads and summarizes saved results with the Python standard library. It does not download models or train. A CUDA-capable environment is required for the optional original model workflow; bitsandbytes installation depends on platform support.
+The notebook defaults to reviewing saved results. Set `RUN_EXPERIMENTS = True` to execute the model and training workflows in a compatible GPU environment. Experiments were conducted using Google Colab with a T4 GPU.
 
-To run a new experiment, explicitly set `RUN_EXPERIMENTS = True` and execute cells in order. This includes model downloads, LoRA training, and all evaluations. New adapters, training files, and result CSVs go into an ignored, unique `runs/<timestamp>/` directory; `data/` and `results/` remain read-only inputs. The historical adapter remains locally in `math_slm_lora/`; the full sequential notebook creates its own new adapter for subsequent hard evaluation.
+## 10. Limitations
 
-The cleaned notebook removes package-uninstall troubleshooting, duplicate helper definitions, stale Colab Drive paths, download/widget output, and an empty cell. It fixes the deleted-model dependency by loading the main model before combined evaluation. Recorded outputs remain in the archived original notebook and CSVs. No model code was executed during cleanup.
+- Standard evaluation shares training templates and contains some exact overlap.
+- The hard set contains only 24 claims, with some implicit mathematical assumptions.
+- No repeated-seed evaluation or statistical confidence intervals were conducted.
+- There is no untrained-SLM or LLM-only self-revision control.
+- Latency and compute efficiency were not measured.
+- Claims were not formally verified, and some labels require independent checking.
+- Prompt and quantization differences limit strict comparisons across phases.
 
-`requirements.txt` follows the notebook's actual installation requirements and imports, with JupyterLab added for local use. It is not an exact environment lock: the original run did not capture all package versions or model revision hashes. Exact numerical reproduction is therefore not guaranteed. No dataset or project license was supplied; no license has been invented.
+The results are preliminary and do not establish broad mathematical generalization.
 
-## Local preservation and Git hygiene
+## 11. Conclusion
 
-`local_archive/sha256.json` records original notebook, dataset, and result hashes. `.gitignore` excludes the original archive, trained adapters/models, training/checkpoint directories, common weight extensions, environments, caches, credentials, token files, and temporary files. Keep tokens in environment variables rather than notebook cells. Git ignore rules do not remove files already tracked; repository preparation checks the index separately.
+MathGuard demonstrates a functioning LLM–SLM mathematical claim-checking pipeline. The LoRA-trained specialist provides feedback that can improve some decisions, but the larger model can also make incorrect revisions.
 
-Nothing has been committed, uploaded, or pushed by this preparation.
+Future work could investigate assumption-focused training and symbolic verification to make model collaboration more reliable.
+
+**Models:** [Qwen3-4B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507) · [Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
